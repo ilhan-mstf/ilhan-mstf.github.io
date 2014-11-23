@@ -1,20 +1,78 @@
-<!DOCTYPE html> 
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=windows-1254" /> 
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /> 
-	<title>KULU.BE</title> 
-	<meta name="description" content="KULUBE" /> 
-	<meta name="keywords" content="KULUBE KUL�BE mustafa ilhan mustilica" />
-	<meta name="author" content="mustafa ilhan" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-	<meta http-equiv="Cache-Control" content="public" />
-	<!-- iOS: run in full-screen mode and display upper status bar as translucent -->
-	<meta name="apple-mobile-web-app-capable" content="yes" /> 
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-	<link href="styles/style.css" rel="stylesheet" type="text/css" media="all" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mustafa ilhan</title>
+    <meta name="description" content="Personal website of Mustafa ilhan" />
+    <meta name="keywords" content="mustafa ilhan personal website mustilica" />
+    <meta name="author" content="mustafa ilhan" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.min.css" />
+    <link href='http://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans:400' rel='stylesheet' type='text/css'>
+    <!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-37257657-1', 'auto');
+      ga('require', 'displayfeatures');
+      ga('require', 'linkid', 'linkid.js');
+      ga('send', 'pageview');
+    </script>
 </head>
+
 <body>
+    <div class="container">
+        <div class="content">
+            <div id="full-screen" class="full-screen">
+                <div class="animated-full-screen"></div>
+                <div class="noise">
+                    <!-- Animated network graph -->
+                    <canvas id="network-graph"></canvas>
+                </div>
+                <div class="bio">
+                    <h1>Hello there!</h1>
+                    <p>This is Mustafa. My passion is to work on multidisciplinary topics like data visualization that tech and design works together and I’m fascinated by art and science that push the limits of human perception.</p>
+                    <p>Currently I’m a software developer at Mobilus where we make <a href="http://invidyo.com" target="_blank">invidyo.com</a> which is a cloud based video surveillance solution and also I’m Master of Fine Arts candidate in media and design at Bilkent University. Before, I studied computer science at METU.</p>
+                    <p>Check out my projects & works:</p>
+                    <a href="http://tt-history.appspot.com/">
+                        <img src="img/logo_s.png"/>
+                        <span class="exp">History of trending topics of Twitter.</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/TweenLite.min.js"></script>
+    <script src="js/EasePack.min.js"></script>
+    <script src="js/rAF.min.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
+
 </html>
+
+<!-- Credits
+
+Inspiration:
+http://dustincurtis.com/
+http://tabithayong.com/
+
+Background Animation Code:
+http://tympanus.net/codrops/2014/09/23/animated-background-headers/
+
+Background Gradient:
+http://ie.microsoft.com/Testdrive/Graphics/CSSGradientBackgroundMaker/Default.html
+
+Source Code:
+https://github.com/mustilica/mustilica.github.io
+
+-->
