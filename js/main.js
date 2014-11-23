@@ -21,10 +21,6 @@
             return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
         }
     };
-    
-    if (isMobile.any()) {
-        return;
-    }
 
     var width, height, fullScreenBackground, canvas, ctx, points, target, animateHeader = true;
 
@@ -160,6 +156,9 @@
                 drawLines(points[i]);
                 points[i].circle.draw();
             }
+        }
+        if (isMobile.any()) {
+            return;
         }
         requestAnimationFrame(animate);
     }
