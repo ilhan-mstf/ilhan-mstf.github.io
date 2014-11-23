@@ -4,7 +4,7 @@ Personal Web Page
 Credits:
 =======
 - Inspiration:
-http://dustincurtis.com/
+http://dustincurtis.com/ - 
 http://tabithayong.com/
 
 - Background Animation Code:
@@ -15,4 +15,5 @@ http://ie.microsoft.com/Testdrive/Graphics/CSSGradientBackgroundMaker/Default.ht
 
 TODO:
 ====
-- add other projects.
+- Add other projects.
+- Make it responsive
