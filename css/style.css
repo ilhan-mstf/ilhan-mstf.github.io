@@ -102,10 +102,6 @@ body {
   font-family: 'Indie Flower', cursive;
   font-weight: bold;
 }
-.exp {
-  display: inline-block;
-  vertical-align: middle;
-}
 a:hover, a:hover .exp {
     text-decoration: underline;
 }
