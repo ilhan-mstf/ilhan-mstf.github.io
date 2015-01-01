@@ -32,7 +32,7 @@
     function initHeader() {
         width = window.innerWidth;
         height = window.innerHeight;
-        target = {x: width-20, y: 10};
+        target = {x: width-150, y: 10};
 
         fullScreenBackground = document.getElementById('full-screen');
         fullScreenBackground.style.height = height+'px';
