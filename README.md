@@ -4,8 +4,7 @@ Personal Web Page
 Credits:
 =======
 - Inspiration:
-http://dustincurtis.com/
-http://tabithayong.com/
+http://dustincurtis.com/, http://tabithayong.com/
 
 - Background Animation Code:
 http://tympanus.net/codrops/2014/09/23/animated-background-headers/
