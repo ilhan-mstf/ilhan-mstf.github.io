@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Personal website of Mustafa ilhan" />
     <meta name="keywords" content="mustafa ilhan personal website webpage mustilica" />
     <meta name="author" content="mustafa ilhan" />
-    
+
     <link rel="icon" href="favicon.ico">
 
     <title>Mustafa ilhan</title>
 
     <!-- Bootstrap core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans:400' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this page -->
     <link href="css/style.min.css?v0.1" rel="stylesheet">
-      
+
+    <!-- Google Analytics -->
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
         ga('create', 'UA-37257657-1', 'auto');
         ga('require', 'displayfeatures');
@@ -36,77 +47,78 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
+</head>
 
-  <body>
-    <div class="background" id="full-screen"></div>
-    <div class="animated-background"></div>
+<body>
+    <div class="background default"></div>
+    <div id="daytime-background"></div>
     <div class="noise">
         <!-- Animated network graph -->
-      <canvas id="network-graph"></canvas>
+        <canvas id="network-graph"></canvas>
     </div>
 
     <div class="site-wrapper">
 
-      <div class="site-wrapper-inner">
+        <div class="site-wrapper-inner">
 
-        <div class="cover-container">
+            <div class="cover-container">
 
-          <div class="masthead clearfix">
-            <div class="inner">
-            </div>
-          </div>
-
-          <div class="inner">
-            <!-- Bio -->
-            <h1 class="cover-heading">Hello there!</h1>
-            <p class="lead">This is Mustafa. I'm passionate about multidisciplinary topics like data visualization that tech and design work together and I’m fascinated by art and science that push the limits of human perception.</p>
-            <p class="lead">Currently I’m software developer at Mobilus where we make <a href="http://invidyo.com/" target="_blank">invidyo.com</a> which is a cloud based video surveillance solution and also I’m Master of Fine Arts candidate in media and design at Bilkent University. Before, I studied computer science at METU.</p>
-            <p>Check out my projects & experiments:</p>
-            
-            <!-- Projects -->
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="15000">
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-              </ol>
-
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                  <a href="http://tt-history.appspot.com/">
-                    <img src="img/tt-history_logo_s.png" class="project-img" alt="tt-history logo"/><span>History of trending topics of Twitter.</span>
-                  </a>
+                <div class="masthead clearfix">
+                    <div class="inner">
+                    </div>
                 </div>
-                <div class="item">
-                  <a href="http://shareddeath.kulu.be/">
-                    <img src="img/shareddeath_logo_s.png" class="project-img" alt="shared death logo"/><span>Web-based participatory artwork.</span>
-                  </a>
+
+                <div class="inner">
+                    <!-- Bio -->
+                    <h1 class="cover-heading">Hello there!</h1>
+                    <p class="lead">This is Mustafa. I'm interested in multidisciplinary topics like data visualization where tech and design work together and I’m fascinated by art and science that push the limits of human perception.</p>
+                    <p class="lead">Currently I’m software developer at Mobilus where we make <a href="http://invidyo.com/" target="_blank">invidyo.com</a> which is a cloud based video surveillance solution and also I’m Master of Fine Arts candidate in media and design at Bilkent University. Before, I studied computer science at METU.</p>
+                    <p>Check out my projects & experiments:</p>
+
+                    <!-- Projects -->
+                    <div class="carousel slide" data-ride="carousel" data-interval="15000">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <a href="http://tt-history.appspot.com/">
+                                    <img src="img/tt-history_logo_s.png" class="project-img" alt="tt-history logo" /><span>History of trending topics of Twitter.</span>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="http://shareddeath.kulu.be/">
+                                    <img src="img/shareddeath_logo_s.png" class="project-img" alt="shared death logo" /><span>Web-based participatory artwork.</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
                 </div>
-              </div>
 
-              <!-- Controls -->
-              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div>
+                <div class="mastfoot">
+                    <div class="inner">
+                        <p>Follow me on <a href="https://github.com/mustilica">Github</a>, <a href="https://medium.com/@mustilica">Medium</a> and <a href="https://twitter.com/mustilica">Twitter</a>.</p>
+                        <p id="homeTownMessages"><span id="message"></span> Please come back later.</p>
+                    </div>
+                </div>
 
-          <div class="mastfoot">
-            <div class="inner">
-              <p>Follow me on <a href="https://github.com/mustilica">Github</a>, <a href="https://medium.com/@mustilica">Medium</a> and <a href="https://twitter.com/mustilica">Twitter</a>.</p>
             </div>
-          </div>
 
         </div>
-
-      </div>
 
     </div>
 
@@ -119,17 +131,102 @@
     <script src="//getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
     <script type="text/javascript">
         // Google Analytics events
-        $('a').on('click', function() {
-          ga('send', 'event', 'link', 'click', $(this).attr('href'));
+        $('a').on('click', function () {
+            ga('send', 'event', 'link', 'click', $(this).attr('href'));
         });
     </script>
-      
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.0.2/jquery.simpleWeather.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var timezoneOffset = 2;
+
+            // Get waether information
+            function getWeatherInfo() {
+                $.simpleWeather({
+                    location: 'Ankara',
+                    woeid: '2347263',
+                    unit: 'c',
+                    success: function (weather) {
+                        //console.log(JSON.stringify(weather));
+
+                        var sunrise = new Date(),
+                            sunset = new Date(),
+                            noon;
+
+                        sunrise.setUTCHours(Number(weather.sunrise.substring(0, weather.sunrise.search(" ")).split(":")[0]) - timezoneOffset);
+                        sunrise.setUTCMinutes(Number(weather.sunrise.substring(0, weather.sunrise.search(" ")).split(":")[1]));
+
+                        sunset.setUTCHours(Number(weather.sunset.substring(0, weather.sunset.search(" ")).split(":")[0]) - timezoneOffset + 12);
+                        sunset.setUTCMinutes(Number(weather.sunset.substring(0, weather.sunset.search(" ")).split(":")[1]));
+
+                        noon = new Date((sunrise.getTime() + sunset.getTime()) / 2);
+
+                        setBackgroundAccordingToDayTime(new Date(), sunrise, noon, sunset);
+                    },
+                    error: function (error) {
+                        //console.log(JSON.stringify(error));
+                    }
+                });
+            }
+
+            // Set background to day time
+            function setBackgroundAccordingToDayTime(current, sunrise, noon, sunset) {
+                /*
+                console.log(current);
+                console.log(sunrise);
+                console.log(noon);
+                console.log(sunset);
+                */
+                var background = $("#daytime-background"),
+                    message = $("#message"),
+                    offset = 60 * 60 * 1000;
+                if (current.getTime() < sunrise.getTime() - offset) {
+                    background.attr('class', 'midnight');
+                    message.text('By the way currently mid-night at my hometown.');
+                } else if (current.getTime() > sunrise.getTime() - offset && current.getTime() < sunrise.getTime() + offset) {
+                    background.attr('class', 'sunrise');
+                    message.text('By the way currently sunrise at my hometown.');
+                } else if (current.getTime() < noon.getTime() - offset) {
+                    background.attr('class', 'morning');
+                    message.text('By the way currently morning at my hometown.');
+                } else if (current.getTime() > noon.getTime() - offset && current.getTime() < noon.getTime() + offset) {
+                    background.attr('class', 'noon');
+                    message.text('By the way currently noon at my hometown.');
+                } else if (current.getTime() < sunset.getTime() - offset) {
+                    background.attr('class', 'afternoon');
+                    message.text('By the way currently afternoon at my hometown.');
+                } else if (current.getTime() > sunset.getTime() - offset && current.getTime() < sunset.getTime() + offset) {
+                    background.attr('class', 'sunset');
+                    message.text('By the way currently sunset at my hometown.');
+                } else if (current.getTime() > sunset.getTime() + offset && current.getTime() < sunset.getTime() + 4 * offset) {
+                    background.attr('class', 'evening');
+                    message.text('By the way currently evening at my hometown.');
+                } else {
+                    background.attr('class', 'midnight');
+                    message.text('By the way currently midnight at my hometown.');
+                }
+
+                background.animate({
+                    opacity: 1
+                }, 5000);
+                $("#homeTownMessages").css('visibility', 'visible');
+                ga('send', 'event', 'background', 'class', background.attr('class'));
+            }
+
+            getWeatherInfo();
+            setInterval(getWeatherInfo, 5 * 60 * 1000);
+
+        });
+    </script>
+
     <!-- Animated network graph scripts -->
     <script src="js/TweenLite.min.js"></script>
     <script src="js/EasePack.min.js"></script>
     <script src="js/rAF.min.js"></script>
-    <script src="js/main.min.js"></script>
-  </body>
+    <script src="js/networkGraphAnimation.min.js"></script>
+
+</body>
+
 </html>
 
 <!-- 

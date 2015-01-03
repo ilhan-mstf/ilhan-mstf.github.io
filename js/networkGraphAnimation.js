@@ -22,7 +22,7 @@
         }
     };
 
-    var width, height, fullScreenBackground, canvas, ctx, points, target, animateHeader = true;
+    var width, height, canvas, ctx, points, target, animateHeader = true;
 
     // Main
     initHeader();
@@ -33,9 +33,6 @@
         width = window.innerWidth;
         height = window.innerHeight;
         target = {x: width-150, y: 10};
-
-        fullScreenBackground = document.getElementById('full-screen');
-        fullScreenBackground.style.height = height+'px';
 
         canvas = document.getElementById('network-graph');
         canvas.width = width;
@@ -121,7 +118,6 @@
     function resize() {
         width = window.innerWidth;
         height = window.innerHeight;
-        fullScreenBackground.style.height = height+'px';
         canvas.width = width;
         canvas.height = height;
     }
@@ -178,7 +174,7 @@
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(p.closest[i].x, p.closest[i].y);
-            ctx.strokeStyle = 'rgba(156,217,249,'+ p.active+')';
+            ctx.strokeStyle = 'rgba(225,250,245,'+ p.active+')';
             ctx.stroke();
         }
     }
@@ -197,7 +193,7 @@
             if(!_this.active) return;
             ctx.beginPath();
             ctx.arc(_this.pos.x, _this.pos.y, _this.radius, 0, 2 * Math.PI, false);
-            ctx.fillStyle = 'rgba(156,217,249,'+ _this.active+')';
+            ctx.fillStyle = 'rgba(225,250,245,'+ _this.active+')';
             ctx.fill();
         };
     }
