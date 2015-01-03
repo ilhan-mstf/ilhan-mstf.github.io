@@ -15,6 +15,9 @@ http://ie.microsoft.com/Testdrive/Graphics/CSSGradientBackgroundMaker/Default.ht
 - SharedDeath Logo:
 http://www.squarespace.com/logo/, Icon by Jason D. Rowley from The Noun Project
 
+- Weather lib:
+http://simpleweatherjs.com/
+
 - Front-end Framework:
 http://getbootstrap.com/
 
