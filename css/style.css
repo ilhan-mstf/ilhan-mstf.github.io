@@ -14,14 +14,13 @@ a {
     transition: all 250ms ease-in
 }
 a:hover {
-    text-decoration: none;
-    color: #FF490D
+    text-decoration: underline;
 }
 ::selection {
-    background: #FF490D;
+    background: #DD4D00
 }
 ::-moz-selection {
-    background: #FF490D;
+    background: #DD4D00
 }
 /*
  * Base structure
@@ -74,14 +73,14 @@ body {
     background-image: linear-gradient(to top, #FFF8A8 0%, #FFB9A8 25%, #004E73 100%)
 }
 .morning {
-    background-image: linear-gradient(to bottom right, #FFFF80 0%, #00A3EF 100%)
+    background-image: linear-gradient(to bottom right, #D8D87E 0%, #00A3EF 100%)
 }
 .noon {
-    background-image: linear-gradient(to bottom, #EFEF90 0%, #00A3EF 100%)
+    background-image: linear-gradient(to bottom, #D8D87E 0%, #00A3EF 100%)
 }
 .afternoon {
     transition: all 250ms ease-in;
-    background-image: linear-gradient(to bottom left, #EFEF90 0%, #00A3EF 100%)
+    background-image: linear-gradient(to bottom left, #D8D87E 0%, #00A3EF 100%)
 }
 .sunset {
     background-image: linear-gradient(to top, #FF8A8A 0%, #5CAED5 50%, #4269E4 100%)
@@ -118,7 +117,6 @@ body {
 }
 #homeTownMessages {
     visibility: hidden;
-    padding-top: 30px
 }
 /*
  * Content
@@ -131,30 +129,19 @@ body {
 .project-img {
     margin-right: 10px
 }
-.carousel-control.right,
-.carousel-control.left {
-    background: none
+a.list-group-item,
+a.list-group-item:hover,
+a.list-group-item:focus {
+    background: none;
+    color: #FFF
 }
-.carousel-inner > .item > a > img {
-    display: inline-block
+a.list-group-item .list-group-item-heading {
+    transition: all 250ms ease-in;
+    color: #FFF36E
 }
-.carousel-indicators {
-    bottom: -40px
-}
-.carousel {
-    margin-bottom: 40px;
-}
-.carousel-control {
-    width: auto
-}
-.carousel-control .glyphicon-chevron-left {
-    margin-left: -30px
-}
-.carousel-control .glyphicon-chevron-right {
-    margin-right: -30px
-}
-.item span {
-    display: inline-block
+a.list-group-item:hover .list-group-item-heading,
+a.list-group-item:focus .list-group-item-heading {
+    text-decoration: underline;
 }
 /*
  * Footer
@@ -169,27 +156,7 @@ body {
  * Affix and center
  */
 
-@media (min-width: 768px) {
-    /* Pull out the header and footer */
-    .masthead {
-        position: fixed;
-        top: 0
-    }
-    .mastfoot {
-        position: fixed;
-        bottom: 0
-    }
-    /* Start the vertical centering */
-    .site-wrapper-inner {
-        vertical-align: middle
-    }
-    /* Handle the widths */
-    .masthead,
-    .mastfoot,
-    .cover-container {
-        width: 100%
-    }
-}
+
 @media (min-width: 992px) {
     .masthead,
     .mastfoot,
