@@ -21,7 +21,7 @@ I've been dreaming a cabin near a lake amoung the mountains.
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="Personal website of Mustafa ilhan" />
-    <meta name="keywords" content="mustafa ilhan personal website webpage mustilica portfolio work project data visualization" />
+    <meta name="keywords" content="mustafa ilhan personal website webpage mustilica portfolio works projects art design software development" />
     <meta name="author" content="Mustafa ilhan (@mustilica)" />
 
     <link rel="icon" href="favicon.ico">
@@ -29,7 +29,7 @@ I've been dreaming a cabin near a lake amoung the mountains.
     <title>Mustafa ilhan</title>
 
     <!-- Style Sheet -->
-    <link href='css/all.min.css?v0.1' rel='stylesheet' type='text/css'>
+    <link href='css/all.min.css?v0.2' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -40,10 +40,11 @@ I've been dreaming a cabin near a lake amoung the mountains.
 
 <body>
     <div class="background default"></div>
-    <div id="daytime-background"></div>
+    <div id="daytimeBackground"></div>
+    <div id="stars"></div>
     <div class="noise">
         <!-- Animated network graph -->
-        <canvas id="network-graph"></canvas>
+        <!--<canvas id="network-graph"></canvas>-->
     </div>
 
     <div class="site-wrapper">
@@ -57,23 +58,29 @@ I've been dreaming a cabin near a lake amoung the mountains.
 
                 <div class="inner">
                     <!-- Bio -->
-                    <h1 class="cover-heading">Hello there!</h1>
-                    <p class="lead">This is Mustafa. I'm a software developer who is also familiar with design and art. I'm interested in projects &amp; topics like data visualization that combine engineering, design and art together.</p>
-                    <p class="lead">Currently I’m working as software developer at Mobilus where we develop <a href="http://invidyo.com/" target="_blank">invidyo.com</a> which is a cloud based video surveillance solution focused on baby cameras and also I’m Master of Fine Arts candidate in media and design at Bilkent University. Before, I studied computer engineering at Middle East Technical University.</p>
-                    <p>Check out my projects & experiments:</p>
-                    <div class="list-group">
-                        <a href="http://tt-history.appspot.com/" class="list-group-item" target="_blank">
-                            <h4 class="list-group-item-heading">tt-history - History of trending topics of Twitter</h4>
-                            <p class="list-group-item-text">Every 10 minutes trending topics are fetched from twitter.com and stored on the database and later represented in a visual way.</p>
-                        </a>
-                        <a href="http://shareddeath.kulu.be/" class="list-group-item" target="_blank">
-                            <h4 class="list-group-item-heading">shareddeath - Web-based participatory artwork</h4>
-                            <p class="list-group-item-text">Its purpose is to help people understand how other people thinks and feels about death, the shared destiny of all living things on the planet.</p>
-                        </a>
+                    <h1 class="cover-heading" id="textHello">Hello there!</h1>
+                    <p class="lead" id="textIntro">This is Mustafa. I'm interested in art, design and software. I'm looking for multidisciplinary projects.</p>
+                    <p class="lead" id="textBackground">Currently I’m working as a software developer at Mobilus where we develop <a href="http://invidyo.com/" target="_blank">invidyo.com</a> which is a cloud based video surveillance solution focused on baby cameras. Recently, I received Master of Fine Arts degree in Media and Design at Bilkent University. Before, I studied Computer Engineering at Middle East Technical University.</p>
+                    <div id="projects">
+                        <p>Check out my projects & experiments:</p>
+                        <div class="list-group">
+                            <a href="http://kulu.be/notebook-project" class="list-group-item" target="_blank">
+                                <h4 class="list-group-item-heading">Notebook Project - Handmade notebooks from discarded papers</h4>
+                                <p class="list-group-item-text">Through this project, I put all my effort to re-imagine, re-consider and re-think the trash. This project aims to find new potentials on trash (or through trash) in every dimension by examining its both visual value and social meaning.</p>
+                            </a>
+                            <a href="http://tt-history.kulu.be/" class="list-group-item" target="_blank">
+                                <h4 class="list-group-item-heading">tt-history - History of trending topics of Twitter</h4>
+                                <p class="list-group-item-text">Every 10 minutes trending topics are fetched from twitter.com and stored on the database and later represented in a visual way.</p>
+                            </a>
+                            <a href="http://shareddeath.kulu.be/" class="list-group-item" target="_blank">
+                                <h4 class="list-group-item-heading">shareddeath - Web-based participatory artwork</h4>
+                                <p class="list-group-item-text">Its purpose is to help people understand how other people thinks and feels about death, the shared destiny of all living things on the planet.</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="mastfoot">
+                <div class="mastfoot" id="footer">
                     <div class="inner">
                         <p>You can also find my works at <a href="https://github.com/mustilica" target="_blank">Github</a> and <a href="https://www.behance.net/mustilica" target="_blank">Behance</a>, follow me on <a href="https://medium.com/@mustilica" target="_blank">Medium</a> and <a href="https://twitter.com/mustilica" target="_blank">Twitter</a>.</p>
                         <p id="homeTownMessages"></p>
@@ -83,15 +90,15 @@ I've been dreaming a cabin near a lake amoung the mountains.
             </div>
         </div>
     </div>
-    
+
     <!-- Script -->
-    <script src="js/all.min.js?v0.1" async></script>
+    <script src="js/all.min.js?v0.2" async></script>
 
 </body>
 
 </html>
 
-<!-- 
+<!--
 Credits
 
 Inspiration:
