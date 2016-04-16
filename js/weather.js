@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     try {
-        var timezoneOffset = 2;
+        var timezoneOffset = 3;
 
         // Get waether information
         function getWeatherInfo() {
@@ -10,7 +10,7 @@ $(document).ready(function () {
                 woeid: '2347263',
                 unit: 'c',
                 success: function (weather) {
-                    //console.log(JSON.stringify(weather));
+                    console.log(JSON.stringify(weather));
 
                     var sunrise = new Date(),
                         sunset = new Date(),
@@ -38,7 +38,7 @@ $(document).ready(function () {
                 stars = $('#stars')
                 message = $('#homeTownMessages'),
                 body = $('body'),
-                offset = (sunset - sunrise) / 6;
+                offset = (sunset - sunrise) / 8;
 
             console.log('sunrise: ' + sunrise.toTimeString()
                 + ', noon: ' + noon.toTimeString()
@@ -76,16 +76,16 @@ $(document).ready(function () {
                 background.attr('class', 'presunset');
                 message.text('Currently afternoon at my hometown.');
                 body.addClass('dark');
-            } else if (current.getTime() > sunset.getTime() - offset && current.getTime() < sunset.getTime() + offset) {
+            } else if (current.getTime() > sunset.getTime() - offset && current.getTime() < sunset.getTime() + 0.5 * offset) {
                 background.attr('class', 'sunset');
                 message.text('Currently sunset at my hometown.');
                 body.removeClass('dark');
-            } else if (current.getTime() > sunset.getTime() + offset && current.getTime() < sunset.getTime() + 2 * offset) {
+            } else if (current.getTime() > sunset.getTime() + 0.5 * offset && current.getTime() < sunset.getTime() + offset) {
                 background.attr('class', 'aftersunset');
-                message.text('Currently evening at my hometown.');
+                message.text('Currently evening at my hometown. Home, home sweet home.');
                 body.removeClass('dark');
                 stars.show();
-            } else if (current.getTime() > sunset.getTime() + 2 * offset && current.getTime() < sunset.getTime() + 4 * offset) {
+            } else if (current.getTime() > sunset.getTime() + offset && current.getTime() < sunset.getTime() + 4 * offset) {
                 background.attr('class', 'evening');
                 message.text('Currently evening at my hometown. Resting on my couch, reading books...');
                 body.removeClass('dark');
