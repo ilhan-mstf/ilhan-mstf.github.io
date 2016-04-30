@@ -10,7 +10,7 @@ $(document).ready(function () {
                 woeid: '2347263',
                 unit: 'c',
                 success: function (weather) {
-                    console.log(JSON.stringify(weather));
+                    //console.log(JSON.stringify(weather));
 
                     var sunrise = new Date(),
                         sunset = new Date(),
@@ -35,7 +35,7 @@ $(document).ready(function () {
         // Set background to day time
         function setBackgroundAccordingToDayTime(current, sunrise, noon, sunset) {
             var background = $('#daytimeBackground'),
-                stars = $('#stars')
+                stars = $('#stars'),
                 message = $('#homeTownMessages'),
                 body = $('body'),
                 offset = (sunset - sunrise) / 8;
@@ -52,27 +52,27 @@ $(document).ready(function () {
                 background.attr('class', 'presunrise');
                 message.text('Currently midnight at my hometown. Mmm mm. Best part of my sleep! Come later.');
                 body.removeClass('dark');
-            } else if (current.getTime() > sunrise.getTime() - offset && current.getTime() < sunrise.getTime() + offset) {
+            } else if (current.getTime() >= sunrise.getTime() - offset && current.getTime() < sunrise.getTime() + offset) {
                 background.attr('class', 'sunrise');
                 message.text('Currently sunrise at my hometown. "Forth, and fear no darkness! Arise! Arise, Riders of Theoden! Spears shall be shaken, shields shall be splintered! A sword day... a red day... ere the sun rises!"');
                 body.addClass('dark');
-            } else if (current.getTime() < noon.getTime() - 3 * offset) {
+            } else if (current.getTime() >= sunrise.getTime() + offset && current.getTime() < noon.getTime() - 2 * offset) {
                 background.attr('class', 'morning');
                 message.text('Currently morning at my hometown. What about drinking tea?');
                 body.addClass('dark');
-            }  else if (current.getTime() < noon.getTime() - 2 * offset) {
+            }  else if (current.getTime() >= sunrise.getTime() + offset && current.getTime() < noon.getTime() - offset) {
                 background.attr('class', 'prenoon');
                 message.text('Currently morning at my hometown. Working time!');
                 body.addClass('dark');
-            } else if (current.getTime() > noon.getTime() - offset && current.getTime() < noon.getTime() + offset) {
+            } else if (current.getTime() >= noon.getTime() - offset && current.getTime() < noon.getTime() + offset) {
                 background.attr('class', 'noon');
                 message.text('Currently noon at my hometown. Launch time, Yummy...');
                 body.addClass('dark');
-            } else if (current.getTime() < sunset.getTime() - 3 * offset) {
+            } else if (current.getTime() >= noon.getTime() + offset && current.getTime() < sunset.getTime() - 2 * offset) {
                 background.attr('class', 'afternoon');
                 message.text('Currently afternoon at my hometown. More work!!');
                 body.addClass('dark');
-            } else if (current.getTime() < sunset.getTime() - 2 * offset) {
+            } else if (current.getTime() >= noon.getTime() + offset && current.getTime() < sunset.getTime() - offset) {
                 background.attr('class', 'presunset');
                 message.text('Currently afternoon at my hometown.');
                 body.addClass('dark');
@@ -85,7 +85,7 @@ $(document).ready(function () {
                 message.text('Currently evening at my hometown. Home, home sweet home.');
                 body.removeClass('dark');
                 stars.show();
-            } else if (current.getTime() > sunset.getTime() + offset && current.getTime() < sunset.getTime() + 4 * offset) {
+            } else if (current.getTime() > sunset.getTime() + offset && current.getTime() < sunset.getTime() + 3 * offset) {
                 background.attr('class', 'evening');
                 message.text('Currently evening at my hometown. Resting on my couch, reading books...');
                 body.removeClass('dark');
