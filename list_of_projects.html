@@ -1,6 +1,8 @@
 <!-- 
 
   Come and contribute https://github.com/ilhan-mstf/
+  
+  Enter hackMode you'll see more!
 
 -->
 
@@ -46,6 +48,9 @@
     li {
       margin-top: 15px;
     }
+    .hidden {
+      display: none;
+    }
 
     @media only screen and (max-width: 1024px) {
       #card {
@@ -74,6 +79,8 @@
     <ul>
       <li><a href="https://www.npmjs.com/package/bing-spell-checker">bing-spell-checker</a> &mdash; <i>npmjs module</i>, 2018</li>
       <li><a href="https://chrome.google.com/webstore/detail/colorize-cloudwatch-logs/fkagnmcbeokmapmcbecbcmpccmlbhkpl">Colorize CloudWatch Logs</a> &mdash; <i>Chrome Extension</i>, 2018 <a href="https://medium.com/@ilhan_mstf/a-chrome-extension-colorize-cloudwatch-logs-c1eba8375288">Read details</a></li>
+      <li class="hidden"><a href="http://bit.ly/AvarageTshirtPriceInTurkey">Avarage prices of Tshirts in Turkey</a> &mdash; <i>Crawling</i>, 2018</li>
+      <li class="hidden"><a href="http://bit.ly/NumberOfUsedCarForSale_Turkey">Number of Used Car for sale in Turkey</a> &mdash; <i>Crawling</i>, 2017</li>
       <li><a href="http://ilhan-mstf.github.io/notebook-project/">Notebook Project</a> &mdash; <i>Thesis Project</i>, 2016</li>
       <li><a href="http://mecra.bilkent.edu.tr">Mecra</a> &mdash; <i>Online journal of graduate students of Bilkent University</i>, 2014</li>
       <li><a href="http://tt-history.appspot.com">History of Trending Topics on Twitter</a> &mdash; <i>Web app containing data collection and visualization</i>, 2013 <a href="https://medium.com/@ilhan_mstf/history-of-trending-topics-on-twitter-46a803a61625">Read details</a></li>
@@ -82,6 +89,20 @@
     <h3>Mustafa İlhan &mdash; Software Developer, PhD Candidate</h3>
     <h4>İzmir, Turkey &mdash; December 2018</h4>
   </section>
+
+  <script type="text/javascript">
+    function get(name){
+      if(name=(new RegExp('[?&]'+encodeURIComponent(name)+'=([^&]*)')).exec(location.search)) {
+          return decodeURIComponent(name[1]);
+      }
+    }
+    function enterHackMode() {
+      Array.from(document.getElementsByClassName('hidden')).map(x => x. className='')
+    }
+    if (get('hackMode') === 'true') {
+      enterHackMode()
+    }
+  </script>
 </body>
 </html>
 
