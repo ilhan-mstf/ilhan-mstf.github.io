@@ -12,8 +12,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Mustafa İlhan | Software Engineer, Visual Artist</title>
-  <meta name="description" content="Mustafa İlhan | Software Engineer, Visual Artist | Personal Web Page"/>
+  <title>Mustafa İlhan | Software Engineer & Visual Artist</title>
+  <meta name="description" content="Personal website of Mustafa İlhan, a Software Engineer and Visual Artist based in Munich, Germany. Exploring the intersection of Art, Design, and Software."/>
+  <meta name="keywords" content="Mustafa İlhan, Software Engineer, Visual Artist, Munich, Art, Design, Web Development, Portfolio">
+  <link rel="canonical" href="https://ilhan-mstf.github.io/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ilhan-mstf.github.io/">
+  <meta property="og:title" content="Mustafa İlhan | Software Engineer & Visual Artist">
+  <meta property="og:description" content="Software Engineer and Visual Artist based in Munich. Interested in Art, Design and Software.">
+  <meta property="og:image" content="https://ilhan-mstf.github.io/noun_13129.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://ilhan-mstf.github.io/">
+  <meta property="twitter:title" content="Mustafa İlhan | Software Engineer & Visual Artist">
+  <meta property="twitter:description" content="Software Engineer and Visual Artist based in Munich. Interested in Art, Design and Software.">
+  <meta property="twitter:image" content="https://ilhan-mstf.github.io/noun_13129.png">
 
   <style type="text/css">
     body {
@@ -23,133 +39,124 @@
         sans-serif;
       background-color: #fff;
       color: #000;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      min-height: 100vh;
     }
     #card {
-      position: fixed;
-      bottom: 120px;
-      left: 160px;
+      padding: 40px;
+      max-width: 600px;
+      margin-left: 120px;
+    }
+    pre#ascii-art {
+      font-family: monospace;
+      font-size: 14px;
+      line-height: 1.2;
+      color: #888;
+      margin-bottom: 20px;
+      user-select: none;
     }
     h1 {
       color: #222;
       font-weight: 600;
-      font-size: 2.8rem
+      font-size: 2.8rem;
+      margin: 0;
     }
     h2 {
       color: #444;
       font-weight: 500;
+      margin: 10px 0;
     }
     h3 {
       color: #666;
       font-weight: normal;
+      margin: 10px 0 30px 0;
     }
-    ul {
+    ul#contact {
       list-style-type: none;
       margin: 0;
       padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
     }
-    li {
-      float: left;
-      margin-right: 20px; 
+    ul#contact li a {
+      text-decoration: none;
+      color: #007aff;
+    }
+    ul#contact li a:hover {
+      text-decoration: underline;
     }
     h4 {
       color: #888;
       font-weight: normal;
-    }
-    .clear {
-      clear: both;
+      margin-top: 40px;
     }
 
-    /* 
-     * Start of message buble animation
-     * https://daneden.github.io/animate.css/
-     */
+    /* Animations */
     @keyframes fadeInUp {
       0% {
         opacity: 0;
-        transform: translate3d(0, 40%, 0)
+        transform: translate3d(0, 20px, 0)
       }
-
       to {
         opacity: 1;
         transform: none
       }
     }
-
     .fadeInUp {
-      animation-name: fadeInUp
+      animation: fadeInUp 0.6s both;
     }
-
-    .animated {
-      animation-duration: .6s;
-      animation-fill-mode: both
-    }
-
-    .delay-1 {
-      animation-delay: 0.6s;
-    }
-    .delay-2 {
-      animation-delay: 1.2s;
-    }
-    .delay-3 {
-      animation-delay: 1.8s;
-    }
-    .delay-4 {
-      animation-delay: 2.4s;
-    }
-
-    /* End of message buble animation */
+    .delay-0 { animation-delay: 0s; }
+    .delay-1 { animation-delay: 0.4s; }
+    .delay-2 { animation-delay: 0.8s; }
+    .delay-3 { animation-delay: 1.2s; }
+    .delay-4 { animation-delay: 1.6s; }
 
     @media only screen and (max-width: 1024px) {
       #card {
-        bottom: 60px;
-        left: 80px;
+        margin-left: 60px;
       }
     }
     @media only screen and (max-width: 600px) {
       #card {
-        bottom: 20px;
-        left: 40px;
+        margin-left: 0;
+        padding: 30px;
       }
-      h1 {
-        font-size: 2.4rem;
-      }
-      h2 {
-        font-size: 1.6rem;
-      }
-      h3 {
-        font-size: 1.3rem;
-      }
-      h4 {
-        font-size: 0.8rem;
-      }
-      li {
-        margin-top: 10px;
-      }
+      h1 { font-size: 2.2rem; }
+      h2 { font-size: 1.5rem; }
+      h3 { font-size: 1.2rem; }
     }
   </style>
 </head>
 <body>
-  <section id="card">
-    <h1 class="fadeInUp animated">Mustafa İlhan</h1>
-    <h2 class="fadeInUp animated delay-1">Software Engineer,<br/>Visual Artist</h2>
-    <h3 class="fadeInUp animated delay-2">Interested in Art, Design and Software</h3>
-    <ul id="contact">
-      <li class="fadeInUp animated delay-3"><a href="list_of_projects.html">Projects</a></li>
-      <li class="fadeInUp animated delay-3"><a href="https://github.com/ilhan-mstf">Github</a></li>
-      <li class="fadeInUp animated delay-3"><a href="https://medium.com/@ilhan_mstf">Medium</a></li>
-      <li class="fadeInUp animated delay-3"><a href="https://twitter.com/ilhan_mstf">Twitter</a></li>
-      <li class="fadeInUp animated delay-3"><a href="https://www.behance.net/ilhan_mstf">Behance</a></li>
-      <li class="fadeInUp animated delay-3"><a href="https://www.linkedin.com/in/mustafailhan">Linkedin</a></li>
-      <li class="fadeInUp animated delay-3"><a href="mustafa-ilhan-resume-en.pdf">Resume</a></li>
-      <li class="fadeInUp animated delay-3"><a href="mailto:ilhan.mstf@gmail.com?subject=Hi">Say Hi! 👋</a></li>
+  <main id="card">
+    <pre id="ascii-art" class="fadeInUp delay-0">
+◯───◯
+│   │
+◯───◯───●
+    │
+    ◯</pre>
+    <h1 class="fadeInUp delay-1">Mustafa İlhan</h1>
+    <h2 class="fadeInUp delay-2">Software Engineer,<br/>Visual Artist</h2>
+    <h3 class="fadeInUp delay-3">Interested in Art, Design and Software</h3>
+    <ul id="contact" class="fadeInUp delay-4">
+      <li><a href="list_of_projects.html">Projects</a></li>
+      <li><a href="https://thisismustafailhan.pages.dev/" target="_blank" rel="noopener noreferrer">Blog</a></li>
+      <li><a href="https://github.com/ilhan-mstf" target="_blank" rel="noopener noreferrer">Github</a></li>
+      <li><a href="https://www.linkedin.com/in/mustafailhan" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+      <li><a href="https://medium.com/@ilhan_mstf" target="_blank" rel="noopener noreferrer">Medium</a></li>
+      <li><a href="https://bsky.app/profile/thisismustafailhan" target="_blank" rel="noopener noreferrer">Bluesky</a></li>
+      <li><a href="https://thisismustafailhan.substack.com/" target="_blank" rel="noopener noreferrer">Substack</a></li>
+      <li><a href="https://www.behance.net/ilhan_mstf" target="_blank" rel="noopener noreferrer">Behance</a></li>
+      <li><a href="mailto:ilhan.mstf@gmail.com?subject=Hi">Say Hi! 👋</a></li>
     </ul>
-    <div class="clear"></div>
-    <h4 class="fadeInUp animated delay-4">İzmir, Turkey &mdash; Feb 2021</h4>
-  </section>
+    <h4 class="fadeInUp delay-4">Munich, Germany &mdash; March 2026</h4>
+  </main>
 </body>
 </html>
 
 <!--
-http://user.ceng.metu.edu.tr/~e1560770/mustafa_ilhan/
-http://user.ceng.metu.edu.tr/~e1560770/old/mustafa_ilhan/
 -->
